@@ -1,0 +1,22 @@
+* SPICE3 file created for 50% voltage divider - technology: sky130A
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+V1 VDD 0 DC 1.8
+
+* Resistor R1 (≈10 kΩ) – layout‐extracted length l=1.82 µm
+X0 VDD OUT GND sky130_fd_pr__res_xhigh_po_0p35 l=1.82
+
+* Resistor R2 (≈10 kΩ) – same length for 50% divider
+X1 OUT GND GND sky130_fd_pr__res_xhigh_po_0p35 l=1.82
+
+.control
+  tran 1n 10n
+  print v(OUT)
+.endc
+
+.end
+
+
+
+

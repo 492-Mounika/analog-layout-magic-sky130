@@ -1,0 +1,25 @@
+magic
+tech sky130A
+timestamp 1744887842
+<< psubdiff >>
+rect -194 49 -142 61
+rect -194 -22 -178 49
+rect -160 -22 -142 49
+rect -194 -33 -142 -22
+<< psubdiffcont >>
+rect -178 -22 -160 49
+<< xpolycontact >>
+rect 0 85 35 304
+rect 0 -219 35 0
+<< xpolyres >>
+rect 0 0 35 85
+<< locali >>
+rect -190 49 -146 57
+rect -190 -22 -178 49
+rect -160 -22 -146 49
+rect -190 -29 -146 -22
+<< labels >>
+rlabel xpolycontact 17 304 17 304 1 top
+rlabel xpolycontact 17 -219 17 -219 5 bot
+rlabel locali -171 -29 -171 -29 5 GND
+<< end >>

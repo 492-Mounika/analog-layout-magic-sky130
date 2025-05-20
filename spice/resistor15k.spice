@@ -1,0 +1,26 @@
+* SPICE3 file for ~15 kΩ resistor test (sky130A)
+
+* 1) Include Sky130 resistor models
+.include /home/monica/share/pdk/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_xhigh_po__base.model.spice
+.include /home/monica/share/pdk/sky130A/libs.ref/sky130_fd_pr/spice/sky130_fd_pr__res_xhigh_po_0p35.model.spice
+
+* 2) Define missing variation parameters
+.param sky130_fd_pr__res_high_po__var_mult=1
+.param crpf_precision=1
+.param crpfsw_precision_1_1=1
+.param mc_mm_switch=0
+
+* 3) Instantiate the resistor with L = 7.5 squares × 0.35 µm = 2.625 µm
+X0 top 0 0 sky130_fd_pr__res_xhigh_po_0p35 l=2.625 w=0.35 mult=1
+
+* 4) 1 V test source from top to ground
+V1 top 0 DC 1
+
+* 5) Operating‑point analysis and print current
+.control
+  op
+  print i(V1)
+.endc
+
+.end
+
