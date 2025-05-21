@@ -30,5 +30,5 @@ This repository contains analog circuit layouts designed using **Magic VLSI** an
 
 ---
 
-📌 _Part of my VLSI learning journey toward becoming a Physical Design Engineer._  
+📌 _Part of my VLSI learning journey toward becoming a VLSI frontend Engineer._  
 📫 Connect with me on [LinkedIn](https://www.linkedin.com/in/mounika-imadabathuni-12070228a)
